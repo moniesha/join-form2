@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>membership</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container">
+    <h3 class="bg-light pl-5 pt-2 pb-2">Pay Invoice</h3>
+
+    <div class="bg-light pt-5 pb-5">
+      <div class="col-md-8 m-auto">
+        <ul><span class="font-weight-bold font-size-medium">Note:</span>
+          <li class="list-style-type-circle">Payments via Credit Card allow for immediate access to member certificate and member privileges. </li>
+          <li>Payments via Credit Card allow for immediate access to member certificate and member privileges. </li>
+          <li>Payments via Credit Card allow for immediate access to member certificate and member privileges. </li>
+          <li>Payments via Credit Card allow for immediate access to member certificate and member privileges. </li>
+        </ul>
+
+        <!------------------------------placeholder------------------------------>
+        <form class="d-block bg-white pb-5">
+
+          <div class="form-group bg-secondary p-2">
+            <h4 class="text-white d-inline">
+              Payment Details
+            </h4>
+            <div class="form-check float-right">
+              <input class="form-check-input custom-checkbox rounded-0  d-inline" type="checkbox" id="checkBox">
+              <label class="form-check-label text-white" for="checkBox">
+                Remember
+              </label>
+            </div>
+          </div>
+
+          <div class="col-10 d-block m-auto pt-5">
+            <div class="mb-3">
+              <div class="form-check d-inline align-middle pr-4">
+                <input class="form-check-input " type="radio" name="Radio" id="formRadio" value="option1" checked>
+                <label class="form-check-label" for="formRadio">
+                  Add New Card
+                </label>
+              </div>
+
+              <div class="form-check d-inline align-middle">
+                <input class="form-check-input" type="radio" name="Radio" id="formRadio2" value="option2">
+                <label class="form-check-label" for="formRadio2">
+                  Bill My Account
+                </label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col">
+                <select id="inputCountry" class="form-control rounded-0 custom-select">
+                  <option>Select Card Type</option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+
+              <div class="form-group col">
+                <input type="text" class="form-control  rounded-0" id="cardName" placeholder="Card Holder Name" required autofocus />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control  rounded-0" id="cardNumber" placeholder="Valid Card Number" required autofocus />
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col">
+                <input type="text" class="form-control  rounded-0" id="expityMonth" placeholder="MM" required />
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control  rounded-0" id="expityYear" placeholder="YY" required /></div>
+
+              <div class="form-group col">
+                <input type="password" class="form-control  rounded-0" id="cvCode" placeholder="CV" required />
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <!------------------------------placeholder end------------------------------>
+
+        <div class="form-group mt-3">
+          <div class="form-check">
+            <input class="form-check-input custom-checkbox" type="checkbox" id="checkBox">
+            <label class="form-check-label" for="checkBox">
+              <small>I have read and agree to the terms: <a href="#" class="text-info font-weight-bold ">Insert Terms</a></small>
+            </label>
+          </div>
+        </div>
+
+        <p class="d-flex justify-content-center">Payment Amount: $600</p>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-info rounded-0 col-3">Back</button>
+          <button type="submit" class="btn btn-success rounded-0 ml-2 col-6">Pay</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
